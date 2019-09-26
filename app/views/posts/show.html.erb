@@ -15,8 +15,8 @@ Categories:
 
 Comments:
 <ol>
-  <% @post.comments.each do |comment| %>
-  <li><%= comment.user.username %> says: <%= comment.content %></li>
+  <% @post.comments.user.each do |user| %>
+  <li><%= user.username %> says: <%= comment.content %></li>
   <% end %>
 </ol>
 <br>
