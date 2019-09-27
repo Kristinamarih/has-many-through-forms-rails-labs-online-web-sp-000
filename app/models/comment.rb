@@ -8,7 +8,7 @@ class Comment < ActiveRecord::Base
     user_attributes[:username].blank?
   end
 
-  def user_attributes=(user_attributes)
-    self.user = User.find_or_create_by(username: user_attributes[:username])
-  end
-end
+#   def user_attributes=(user_attributes)
+#     self.user = User.find_or_create_by(username: user_attributes[:username])
+#   end
+# end
